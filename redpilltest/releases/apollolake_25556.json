@@ -1,0 +1,27 @@
+{
+  "mod_version": "v1",
+
+  "files": [
+    {
+      "name": "redpill-4.4.59-apollolake.tgz",
+      "url": "https://raw.githubusercontent.com/pocopico/rp-ext/master/redpilltest/releases/redpill-apollolake-4.4.59.tgz",
+      "sha256": "1173b89ef0b978aafb5dede539ca7d149d4678b7a8f77fe06c2f1ccec11b2e38",
+      "packed": true
+    },
+    {
+      "name": "check-redpill.sh",
+      "url": "https://raw.githubusercontent.com/pocopico/rp-ext/master/redpilltest/src/check-redpill.sh",
+      "sha256": "60825be580f1d152885b20a9210baf546fa10df70f0ec1d28fc25e4cfafa20bf",
+      "packed": false
+    }
+  ],
+
+  "kmods": {
+    "redpill.ko": ""
+  },
+
+    "scripts": {
+    "on_boot": "check-redpill.sh"
+  }
+
+}

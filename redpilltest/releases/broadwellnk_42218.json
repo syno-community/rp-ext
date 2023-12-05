@@ -1,0 +1,27 @@
+{
+  "mod_version": "v1",
+
+  "files": [
+    {
+      "name": "redpill-4.4.180-broadwellnk.tgz",
+      "url": "https://raw.githubusercontent.com/pocopico/rp-ext/master/redpilltest/releases/redpill-broadwellnk-4.4.180.tgz",
+      "sha256": "a34334f54635ef952b695a39f79749f5463c2c4139344632acf5cb22b47c5d2d",
+      "packed": true
+    },
+    {
+      "name": "check-redpill.sh",
+      "url": "https://raw.githubusercontent.com/pocopico/rp-ext/master/redpilltest/src/check-redpill.sh",
+      "sha256": "60825be580f1d152885b20a9210baf546fa10df70f0ec1d28fc25e4cfafa20bf",
+      "packed": false
+    }
+  ],
+
+  "kmods": {
+    "redpill.ko": ""
+  },
+
+    "scripts": {
+    "on_boot": "check-redpill.sh"
+  }
+
+}
